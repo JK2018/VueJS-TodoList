@@ -1,7 +1,7 @@
 <template>
     <div class="card my-2 item-todo">
         <p>{{task}}</p>
-        <div class="btn-supr btn btn-danger">X</div>
+        <div v-on:click="deleteTask" class="btn-supr btn btn-danger">X</div>
     </div>
 </template>
 
@@ -11,7 +11,10 @@
 <script>
     export default {
         name: 'Item',
-        props: ['task', 'supp']
+        props: ['task', 'deleteTask'],
+        methods: { 
+            
+        }
     }
 </script>
 
